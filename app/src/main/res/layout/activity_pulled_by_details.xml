@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.debongz.quotesboard.PulledByDetails">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="3dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:textColor="#FFF"/>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:padding="10dp"
+        android:layout_below="@+id/bytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/qnumber"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quote Number:"
+            />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/qntxt"
+            android:layout_below="@+id/qnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_below="@id/qntxt"
+            android:id="@+id/shop_name"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop Name:"
+            />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/sntxt"
+            android:layout_below="@+id/shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_below="@id/sntxt"
+            android:id="@+id/by"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assigned By:"
+            />
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/byimg"
+            android:layout_below="@+id/by"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+        <TextView
+            android:layout_below="@id/byimg"
+            android:id="@+id/to"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assigned To:"
+            />
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/toimg"
+            android:layout_below="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

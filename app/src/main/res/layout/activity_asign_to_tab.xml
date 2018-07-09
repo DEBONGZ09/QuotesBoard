@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.debongz.quotesboard.AsignToTab"
+    android:background="#FFF">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASSIGNED TO"
+            android:textColor="#FFF"/>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/tab_txt"
+        android:gravity="center_vertical"
+        android:height="50dp"
+        android:textColor="#000"
+        android:layout_below="@+id/bytoolbar"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Assigned To:"
+        android:background="@drawable/line"
+        />
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:layout_below="@+id/tab_txt"
+        android:layout_above="@+id/btns_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/signature_padto" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/sigimgto"
+        android:layout_below="@id/tab_txt"
+        android:background="#894"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/btns_tab"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_alignParentLeft="true"
+            android:id="@+id/clear_buttonto"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:text="Clear"
+            android:enabled="false" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/save_buttonto"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:text="Continue"
+            android:enabled="false" />
+    </RelativeLayout>
+</RelativeLayout>

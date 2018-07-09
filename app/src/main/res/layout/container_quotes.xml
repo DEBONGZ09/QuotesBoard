@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/quote_line"
+    android:padding="10dp"
+    android:background="@drawable/line"
+    android:layout_height="wrap_content">
+    <TextView
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:id="@+id/aqnumber"
+        android:layout_width="80dp"
+        android:text="11233"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/acust_name"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/aqnumber"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="Good Hope Groceries"
+        />
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/aarea"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/acust_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Johannesburg"
+        />
+    <TextView
+        android:maxLines="1"
+        android:id="@+id/adate"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/aarea"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="01/02/18"
+        />
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/q_menu"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
